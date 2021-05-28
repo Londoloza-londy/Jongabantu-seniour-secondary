@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url(https://images.indianexpress.com/2020/04/books_1200.jpg);
+	background: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: url();
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: rgb(50, 189, 159);
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: rgb(33, 174, 199);
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: 400px; ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+.welcome-text p{
+width: 100%;
+margin-top: auto;
+color: rgb(245, 240, 240);
+}
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  position: relative;
+  color: #111;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.5);
+}
+
+label{
+  display: none;
+}
+
+#check{
+  z-index: 3;
+  display: none;
+}
+
+/* Responsive styles */
+
+@media (max-width: 960px){
+  header .navigation{
+    display: none;
+  }
+
+  label{
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  #slideshow { 
+	margin: 50px auto; 
+	position: relative; 
+	width: 240px; 
+	height: 240px; 
+	padding: 10px; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  }
+  
+  #slideshow > div { 
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+	right: 10px; 
+	bottom: 10px; 
+  }
+  body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(https://images.indianexpress.com/2020/04/books_1200.jpg);
+	display: flex;
+  }
+  
+  .slider{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  
+  .slides{
+	width: 800%;
+	height: 500px;
+	display: flex;
+  }
+  
+  .slides input{
+	display: none;
+  }
+  
+  .slide{
+	width: 20%;
+	transition: 1s;
+  }
+  
+  .slide img{
+	width: 1000px;
+	height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .manual-btn{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+	margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+	background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+	margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+	margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+	margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+	margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+	margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40D3DC;
+  }
+		
+  

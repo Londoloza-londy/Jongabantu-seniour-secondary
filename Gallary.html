@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="icon" href="https://image.shutterstock.com/image-vector/jb-bj-letter-logo-design-260nw-1734814859.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Gallery.css">
+   
+</head>
+<body>
+    <header>
+      <h2><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaewBbD_k67p9aUyUT56dIyRCyblBBhXOEg&usqp=CAU" class="logo"></a></h2>
+    <div class="wrapper">
+        <div class="logo"></div>
+            <img src="JB" alt="">
+        </div>
+<ul class="nav-area">
+<li><a href="index.html">Home</a></li>
+<li><a href="about us.html">About</a></li>
+<li><a href="services.html">Gallary</a></li>
+<li><a href="#">Admission</a></li>
+<li><a href="contact us.html">Contact</a></li>
+</ul>
+</div>
+
+<!--image slider start-->
+<div class="slider">
+  <div class="slides">
+    <!--radio buttons start-->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!--radio buttons end-->
+    <!--slide images start-->
+    <div class="slide first">
+      <img src="https://www.westerncape.gov.za/sites/www.westerncape.gov.za/files/kwanokuthula_primary_school.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1vHaq0Bs4sUriEJe_F5qHW3IIWeYzZxiH2HOTmZImmbQQ0Esg0gqVLT28ko93GcQfmI&usqp=CAU" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://images.squarespace-cdn.com/content/v1/5316c492e4b0c6f4c1797d06/1396356719857-HCQW0B30RTCR7F70V71L/ke17ZwdGBToddI8pDm48kARgdG-jbooLPfoR5jyq32xZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI7hgihT751r2sSTaXm6HTkP7lw3UCFmSvz9vhirgH4RAKMshLAGzx4R3EDFOm1kBS/5496710258_7fcc5a8260_o.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://www.schoolguide.co.za/media/jreviews/photos/original/a5/0d/a9/_img-0298-1353199704.jpg" alt="">
+    </div>
+    <!--slide images end-->
+    <!--automatic navigation start-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!--automatic navigation end-->
+  </div>
+  <!--manual navigation start-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!--manual navigation end-->
+</div>
+<!--image slider end-->
+
+</header>
+
+
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 5000);
+</script>
+
+</body>
+</html>
